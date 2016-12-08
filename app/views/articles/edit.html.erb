@@ -1,13 +1,4 @@
 <h1>Edit Existing article</h1>
 
 
-<% if @article.errors.any? %>
-    <h2>Erorrs from preventing create new article</h2>
-    <% @article.errors.full_messages.each do |msg| %>
-        <ul>
-            <li><%= msg %></li>
-        </ul>
-    <% end %>
-<% end %>
-
 <%= render 'form' %>
